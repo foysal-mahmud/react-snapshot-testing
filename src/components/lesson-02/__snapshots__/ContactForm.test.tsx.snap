@@ -1,0 +1,445 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Lesson 2: ContactForm Component - Forms & Async Testing Lesson 2: Form State Snapshots captures empty form state 1`] = `
+<form
+  aria-label="Contact form"
+  class="contact-form"
+  data-testid="contact-form"
+>
+  <h2>
+    Contact Us
+  </h2>
+  <div
+    class="form-group"
+  >
+    <label
+      for="name"
+    >
+      Name *
+    </label>
+    <input
+      class=""
+      id="name"
+      name="name"
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    class="form-group"
+  >
+    <label
+      for="email"
+    >
+      Email *
+    </label>
+    <input
+      class=""
+      id="email"
+      name="email"
+      type="email"
+      value=""
+    />
+  </div>
+  <div
+    class="form-group"
+  >
+    <label
+      for="subject"
+    >
+      Subject *
+    </label>
+    <select
+      class=""
+      id="subject"
+      name="subject"
+    >
+      <option
+        value=""
+      >
+        Please select a subject
+      </option>
+      <option
+        value="general"
+      >
+        General Inquiry
+      </option>
+      <option
+        value="support"
+      >
+        Technical Support
+      </option>
+      <option
+        value="billing"
+      >
+        Billing Question
+      </option>
+      <option
+        value="feedback"
+      >
+        Feedback
+      </option>
+    </select>
+  </div>
+  <div
+    class="form-group"
+  >
+    <label
+      for="message"
+    >
+      Message *
+    </label>
+    <textarea
+      class=""
+      id="message"
+      name="message"
+      rows="5"
+    />
+  </div>
+  <div
+    class="form-group"
+  >
+    <label
+      class="checkbox-label"
+    >
+      <input
+        name="newsletter"
+        type="checkbox"
+      />
+      Subscribe to our newsletter
+    </label>
+  </div>
+  <div
+    class="form-actions"
+  >
+    <button
+      aria-describedby="submit-help"
+      class="btn btn-primary"
+      type="submit"
+    >
+      Send Message
+    </button>
+    <button
+      class="btn btn-secondary"
+      type="button"
+    >
+      Reset
+    </button>
+  </div>
+  <p
+    class="help-text"
+    id="submit-help"
+  >
+    * Required fields
+  </p>
+</form>
+`;
+
+exports[`Lesson 2: ContactForm Component - Forms & Async Testing Lesson 2: Form State Snapshots captures form with initial data 1`] = `
+<form
+  aria-label="Contact form"
+  class="contact-form"
+  data-testid="contact-form"
+>
+  <h2>
+    Contact Us
+  </h2>
+  <div
+    class="form-group"
+  >
+    <label
+      for="name"
+    >
+      Name *
+    </label>
+    <input
+      class=""
+      id="name"
+      name="name"
+      type="text"
+      value="John Doe"
+    />
+  </div>
+  <div
+    class="form-group"
+  >
+    <label
+      for="email"
+    >
+      Email *
+    </label>
+    <input
+      class=""
+      id="email"
+      name="email"
+      type="email"
+      value="john@example.com"
+    />
+  </div>
+  <div
+    class="form-group"
+  >
+    <label
+      for="subject"
+    >
+      Subject *
+    </label>
+    <select
+      class=""
+      id="subject"
+      name="subject"
+    >
+      <option
+        value=""
+      >
+        Please select a subject
+      </option>
+      <option
+        value="general"
+      >
+        General Inquiry
+      </option>
+      <option
+        value="support"
+      >
+        Technical Support
+      </option>
+      <option
+        value="billing"
+      >
+        Billing Question
+      </option>
+      <option
+        value="feedback"
+      >
+        Feedback
+      </option>
+    </select>
+  </div>
+  <div
+    class="form-group"
+  >
+    <label
+      for="message"
+    >
+      Message *
+    </label>
+    <textarea
+      class=""
+      id="message"
+      name="message"
+      rows="5"
+    >
+      Pre-filled message
+    </textarea>
+  </div>
+  <div
+    class="form-group"
+  >
+    <label
+      class="checkbox-label"
+    >
+      <input
+        checked=""
+        name="newsletter"
+        type="checkbox"
+      />
+      Subscribe to our newsletter
+    </label>
+  </div>
+  <div
+    class="form-actions"
+  >
+    <button
+      aria-describedby="submit-help"
+      class="btn btn-primary"
+      type="submit"
+    >
+      Send Message
+    </button>
+    <button
+      class="btn btn-secondary"
+      type="button"
+    >
+      Reset
+    </button>
+  </div>
+  <p
+    class="help-text"
+    id="submit-help"
+  >
+    * Required fields
+  </p>
+</form>
+`;
+
+exports[`Lesson 2: ContactForm Component - Forms & Async Testing Lesson 2: Form State Snapshots captures form with validation errors 1`] = `
+<form
+  aria-label="Contact form"
+  class="contact-form"
+  data-testid="contact-form"
+>
+  <h2>
+    Contact Us
+  </h2>
+  <div
+    class="form-group"
+  >
+    <label
+      for="name"
+    >
+      Name *
+    </label>
+    <input
+      aria-describedby="name-error"
+      class="error"
+      id="name"
+      name="name"
+      type="text"
+      value=""
+    />
+    <span
+      class="error-message"
+      data-testid="name-error"
+      id="name-error"
+      role="alert"
+    >
+      Name is required
+    </span>
+  </div>
+  <div
+    class="form-group"
+  >
+    <label
+      for="email"
+    >
+      Email *
+    </label>
+    <input
+      aria-describedby="email-error"
+      class="error"
+      id="email"
+      name="email"
+      type="email"
+      value=""
+    />
+    <span
+      class="error-message"
+      data-testid="email-error"
+      id="email-error"
+      role="alert"
+    >
+      Email is required
+    </span>
+  </div>
+  <div
+    class="form-group"
+  >
+    <label
+      for="subject"
+    >
+      Subject *
+    </label>
+    <select
+      aria-describedby="subject-error"
+      class="error"
+      id="subject"
+      name="subject"
+    >
+      <option
+        value=""
+      >
+        Please select a subject
+      </option>
+      <option
+        value="general"
+      >
+        General Inquiry
+      </option>
+      <option
+        value="support"
+      >
+        Technical Support
+      </option>
+      <option
+        value="billing"
+      >
+        Billing Question
+      </option>
+      <option
+        value="feedback"
+      >
+        Feedback
+      </option>
+    </select>
+    <span
+      class="error-message"
+      data-testid="subject-error"
+      id="subject-error"
+      role="alert"
+    >
+      Subject is required
+    </span>
+  </div>
+  <div
+    class="form-group"
+  >
+    <label
+      for="message"
+    >
+      Message *
+    </label>
+    <textarea
+      aria-describedby="message-error"
+      class="error"
+      id="message"
+      name="message"
+      rows="5"
+    />
+    <span
+      class="error-message"
+      data-testid="message-error"
+      id="message-error"
+      role="alert"
+    >
+      Message is required
+    </span>
+  </div>
+  <div
+    class="form-group"
+  >
+    <label
+      class="checkbox-label"
+    >
+      <input
+        name="newsletter"
+        type="checkbox"
+      />
+      Subscribe to our newsletter
+    </label>
+  </div>
+  <div
+    class="form-actions"
+  >
+    <button
+      aria-describedby="submit-help"
+      class="btn btn-primary"
+      type="submit"
+    >
+      Send Message
+    </button>
+    <button
+      class="btn btn-secondary"
+      type="button"
+    >
+      Reset
+    </button>
+  </div>
+  <p
+    class="help-text"
+    id="submit-help"
+  >
+    * Required fields
+  </p>
+</form>
+`;

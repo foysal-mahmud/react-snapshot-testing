@@ -1,0 +1,278 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Lesson 2: UserCard Component - Query Methods Deep Dive Lesson 2: Advanced Snapshot Testing captures guest user card 1`] = `
+<div
+  class="user-card"
+  data-testid="user-card"
+>
+  <div
+    class="user-card__header"
+  >
+    <div
+      class="user-card__avatar-placeholder"
+      title="No profile picture"
+    >
+      J
+    </div>
+    <div
+      class="user-card__info"
+    >
+      <h2
+        class="user-card__name"
+      >
+        John Doe
+      </h2>
+      <p
+        class="user-card__email"
+      >
+        john.doe@example.com
+      </p>
+      <div
+        class="user-card__status"
+      >
+        <span
+          aria-label="User is offline"
+          class="status-indicator offline"
+        />
+        <span
+          class="status-text"
+        >
+          Offline
+        </span>
+      </div>
+      <span
+        aria-label="User role: guest"
+        class="user-card__role role-guest"
+        role="status"
+      >
+        Guest
+      </span>
+    </div>
+  </div>
+  <div
+    aria-label="User actions"
+    class="user-card__actions"
+    role="group"
+  >
+    <button
+      aria-label="Edit John Doe's profile"
+      class="btn btn-primary"
+    >
+      Edit
+    </button>
+    <button
+      aria-label="Send message to John Doe"
+      class="btn btn-secondary"
+    >
+      Message
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Lesson 2: UserCard Component - Query Methods Deep Dive Lesson 2: Advanced Snapshot Testing captures user card with all features 1`] = `
+<div
+  class="user-card"
+  data-testid="user-card"
+>
+  <div
+    class="user-card__header"
+  >
+    <img
+      alt="Alice Johnson's profile picture"
+      class="user-card__avatar"
+      src="https://example.com/alice.jpg"
+    />
+    <div
+      class="user-card__info"
+    >
+      <h2
+        class="user-card__name"
+      >
+        Alice Johnson
+      </h2>
+      <p
+        class="user-card__email"
+      >
+        alice@example.com
+      </p>
+      <div
+        class="user-card__status"
+      >
+        <span
+          aria-label="User is online"
+          class="status-indicator online"
+        />
+        <span
+          class="status-text"
+        >
+          Online
+        </span>
+      </div>
+      <span
+        aria-label="User role: admin"
+        class="user-card__role role-admin"
+        role="status"
+      >
+        Admin
+      </span>
+    </div>
+  </div>
+  <div
+    class="user-card__bio"
+  >
+    <h3>
+      About
+    </h3>
+    <p>
+      Senior developer and team lead with expertise in React and TypeScript.
+    </p>
+  </div>
+  <div
+    aria-label="User actions"
+    class="user-card__actions"
+    role="group"
+  >
+    <button
+      aria-label="Edit Alice Johnson's profile"
+      class="btn btn-primary"
+    >
+      Edit
+    </button>
+    <button
+      aria-label="Send message to Alice Johnson"
+      class="btn btn-secondary"
+    >
+      Message
+    </button>
+    <button
+      aria-label="Delete Alice Johnson's account"
+      class="btn btn-danger"
+    >
+      Delete
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Lesson 2: UserCard Component - Query Methods Deep Dive Lesson 2: Advanced Snapshot Testing captures user card with minimal props 1`] = `
+<div
+  class="user-card"
+  data-testid="user-card"
+>
+  <div
+    class="user-card__header"
+  >
+    <div
+      class="user-card__avatar-placeholder"
+      title="No profile picture"
+    >
+      J
+    </div>
+    <div
+      class="user-card__info"
+    >
+      <h2
+        class="user-card__name"
+      >
+        John Doe
+      </h2>
+      <p
+        class="user-card__email"
+      >
+        john.doe@example.com
+      </p>
+      <div
+        class="user-card__status"
+      >
+        <span
+          aria-label="User is offline"
+          class="status-indicator offline"
+        />
+        <span
+          class="status-text"
+        >
+          Offline
+        </span>
+      </div>
+      <span
+        aria-label="User role: user"
+        class="user-card__role role-user"
+        role="status"
+      >
+        User
+      </span>
+    </div>
+  </div>
+  <div
+    aria-label="User actions"
+    class="user-card__actions"
+    role="group"
+  >
+    <button
+      aria-label="Edit John Doe's profile"
+      class="btn btn-primary"
+    >
+      Edit
+    </button>
+    <button
+      aria-label="Send message to John Doe"
+      class="btn btn-secondary"
+    >
+      Message
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Lesson 2: UserCard Component - Query Methods Deep Dive Lesson 2: Advanced Snapshot Testing captures user card without actions 1`] = `
+<div
+  class="user-card"
+  data-testid="user-card"
+>
+  <div
+    class="user-card__header"
+  >
+    <div
+      class="user-card__avatar-placeholder"
+      title="No profile picture"
+    >
+      J
+    </div>
+    <div
+      class="user-card__info"
+    >
+      <h2
+        class="user-card__name"
+      >
+        John Doe
+      </h2>
+      <p
+        class="user-card__email"
+      >
+        john.doe@example.com
+      </p>
+      <div
+        class="user-card__status"
+      >
+        <span
+          aria-label="User is offline"
+          class="status-indicator offline"
+        />
+        <span
+          class="status-text"
+        >
+          Offline
+        </span>
+      </div>
+      <span
+        aria-label="User role: user"
+        class="user-card__role role-user"
+        role="status"
+      >
+        User
+      </span>
+    </div>
+  </div>
+</div>
+`;

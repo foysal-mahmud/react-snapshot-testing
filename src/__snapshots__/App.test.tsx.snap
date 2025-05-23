@@ -1,5 +1,558 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`App Component - Lesson Structure matches app structure snapshot 1`] = `
+<main
+  class="App-content"
+>
+  <section
+    class="lesson-section"
+    data-testid="lesson-1-section"
+  >
+    <h2>
+      📚 Lesson 1: Testing Foundations
+    </h2>
+    <p>
+      Basic components, unit tests, and introduction to snapshot testing
+    </p>
+    <div
+      class="component-showcase"
+    >
+      <div
+        class="welcome-container"
+        data-testid="welcome-container"
+      >
+        <h1>
+          Welcome, 
+          React Testing Student
+          !
+        </h1>
+        <p>
+          Thank you for joining our React Snapshot Testing course.
+        </p>
+        <div
+          class="info"
+          data-testid="date-info"
+        >
+          <span>
+            Current date: 
+            5/23/2025
+          </span>
+        </div>
+      </div>
+      <div
+        class="button-group"
+      >
+        <button
+          class="btn btn-primary"
+          data-testid="basic-button"
+        >
+          Primary Action
+        </button>
+        <button
+          class="btn btn-secondary"
+          data-testid="basic-button"
+        >
+          Secondary Action
+        </button>
+        <button
+          class="btn btn-primary btn-disabled"
+          data-testid="basic-button"
+          disabled=""
+        >
+          Disabled Button
+        </button>
+      </div>
+    </div>
+  </section>
+  <section
+    class="lesson-section"
+    data-testid="lesson-2-section"
+  >
+    <h2>
+      🔍 Lesson 2: React Testing Library Mastery
+    </h2>
+    <p>
+      Query methods, user interactions, forms, and async testing
+    </p>
+    <div
+      class="component-showcase"
+    >
+      <div
+        class="user-cards"
+      >
+        <h3>
+          User Cards - Query Methods Practice
+        </h3>
+        <div
+          class="cards-grid"
+        >
+          <div
+            class="user-card"
+            data-testid="user-card"
+          >
+            <div
+              class="user-card__header"
+            >
+              <img
+                alt="Alice Johnson's profile picture"
+                class="user-card__avatar"
+                src="https://via.placeholder.com/60x60/4f46e5/ffffff?text=AJ"
+              />
+              <div
+                class="user-card__info"
+              >
+                <h2
+                  class="user-card__name"
+                >
+                  Alice Johnson
+                </h2>
+                <p
+                  class="user-card__email"
+                >
+                  alice@example.com
+                </p>
+                <div
+                  class="user-card__status"
+                >
+                  <span
+                    aria-label="User is online"
+                    class="status-indicator online"
+                  />
+                  <span
+                    class="status-text"
+                  >
+                    Online
+                  </span>
+                </div>
+                <span
+                  aria-label="User role: admin"
+                  class="user-card__role role-admin"
+                  role="status"
+                >
+                  Admin
+                </span>
+              </div>
+            </div>
+            <div
+              class="user-card__bio"
+            >
+              <h3>
+                About
+              </h3>
+              <p>
+                Senior developer and team lead with expertise in React and TypeScript.
+              </p>
+            </div>
+            <div
+              aria-label="User actions"
+              class="user-card__actions"
+              role="group"
+            >
+              <button
+                aria-label="Edit Alice Johnson's profile"
+                class="btn btn-primary"
+              >
+                Edit
+              </button>
+              <button
+                aria-label="Send message to Alice Johnson"
+                class="btn btn-secondary"
+              >
+                Message
+              </button>
+              <button
+                aria-label="Delete Alice Johnson's account"
+                class="btn btn-danger"
+              >
+                Delete
+              </button>
+            </div>
+          </div>
+          <div
+            class="user-card"
+            data-testid="user-card"
+          >
+            <div
+              class="user-card__header"
+            >
+              <div
+                class="user-card__avatar-placeholder"
+                title="No profile picture"
+              >
+                B
+              </div>
+              <div
+                class="user-card__info"
+              >
+                <h2
+                  class="user-card__name"
+                >
+                  Bob Smith
+                </h2>
+                <p
+                  class="user-card__email"
+                >
+                  bob@example.com
+                </p>
+                <div
+                  class="user-card__status"
+                >
+                  <span
+                    aria-label="User is offline"
+                    class="status-indicator offline"
+                  />
+                  <span
+                    class="status-text"
+                  >
+                    Offline
+                  </span>
+                </div>
+                <span
+                  aria-label="User role: user"
+                  class="user-card__role role-user"
+                  role="status"
+                >
+                  User
+                </span>
+              </div>
+            </div>
+            <div
+              class="user-card__bio"
+            >
+              <h3>
+                About
+              </h3>
+              <p>
+                Frontend developer passionate about creating amazing user experiences.
+              </p>
+            </div>
+            <div
+              aria-label="User actions"
+              class="user-card__actions"
+              role="group"
+            >
+              <button
+                aria-label="Edit Bob Smith's profile"
+                class="btn btn-primary"
+              >
+                Edit
+              </button>
+              <button
+                aria-label="Send message to Bob Smith"
+                class="btn btn-secondary"
+              >
+                Message
+              </button>
+            </div>
+          </div>
+          <div
+            class="user-card"
+            data-testid="user-card"
+          >
+            <div
+              class="user-card__header"
+            >
+              <div
+                class="user-card__avatar-placeholder"
+                title="No profile picture"
+              >
+                C
+              </div>
+              <div
+                class="user-card__info"
+              >
+                <h2
+                  class="user-card__name"
+                >
+                  Carol Davis
+                </h2>
+                <p
+                  class="user-card__email"
+                >
+                  carol@example.com
+                </p>
+                <div
+                  class="user-card__status"
+                >
+                  <span
+                    aria-label="User is online"
+                    class="status-indicator online"
+                  />
+                  <span
+                    class="status-text"
+                  >
+                    Online
+                  </span>
+                </div>
+                <span
+                  aria-label="User role: guest"
+                  class="user-card__role role-guest"
+                  role="status"
+                >
+                  Guest
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="contact-form-section"
+      >
+        <h3>
+          Contact Form - Form Testing & Validation
+        </h3>
+        <form
+          aria-label="Contact form"
+          class="contact-form"
+          data-testid="contact-form"
+        >
+          <h2>
+            Contact Us
+          </h2>
+          <div
+            class="form-group"
+          >
+            <label
+              for="name"
+            >
+              Name *
+            </label>
+            <input
+              class=""
+              id="name"
+              name="name"
+              type="text"
+              value=""
+            />
+          </div>
+          <div
+            class="form-group"
+          >
+            <label
+              for="email"
+            >
+              Email *
+            </label>
+            <input
+              class=""
+              id="email"
+              name="email"
+              type="email"
+              value=""
+            />
+          </div>
+          <div
+            class="form-group"
+          >
+            <label
+              for="subject"
+            >
+              Subject *
+            </label>
+            <select
+              class=""
+              id="subject"
+              name="subject"
+            >
+              <option
+                value=""
+              >
+                Please select a subject
+              </option>
+              <option
+                value="general"
+              >
+                General Inquiry
+              </option>
+              <option
+                value="support"
+              >
+                Technical Support
+              </option>
+              <option
+                value="billing"
+              >
+                Billing Question
+              </option>
+              <option
+                value="feedback"
+              >
+                Feedback
+              </option>
+            </select>
+          </div>
+          <div
+            class="form-group"
+          >
+            <label
+              for="message"
+            >
+              Message *
+            </label>
+            <textarea
+              class=""
+              id="message"
+              name="message"
+              rows="5"
+            />
+          </div>
+          <div
+            class="form-group"
+          >
+            <label
+              class="checkbox-label"
+            >
+              <input
+                name="newsletter"
+                type="checkbox"
+              />
+              Subscribe to our newsletter
+            </label>
+          </div>
+          <div
+            class="form-actions"
+          >
+            <button
+              aria-describedby="submit-help"
+              class="btn btn-primary"
+              type="submit"
+            >
+              Send Message
+            </button>
+            <button
+              class="btn btn-secondary"
+              type="button"
+            >
+              Reset
+            </button>
+          </div>
+          <p
+            class="help-text"
+            id="submit-help"
+          >
+            * Required fields
+          </p>
+        </form>
+      </div>
+      <div
+        class="async-loader-section"
+      >
+        <h3>
+          Async Loader - Async Testing Patterns
+        </h3>
+        <div
+          class="async-loader"
+          data-testid="async-loader"
+        >
+          <div
+            aria-label="Loading users"
+            class="loading-spinner"
+            data-testid="loading-spinner"
+            role="status"
+          >
+            <div
+              class="spinner"
+            />
+            <p>
+              Loading users...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    class="progress-section"
+    data-testid="progress-section"
+  >
+    <h2>
+      📈 Learning Progress
+    </h2>
+    <div
+      class="progress-grid"
+    >
+      <div
+        class="progress-item completed"
+      >
+        <h4>
+          ✅ Lesson 1: Foundations
+        </h4>
+        <ul>
+          <li>
+            Component rendering with React Testing Library
+          </li>
+          <li>
+            Basic queries (getByRole, getByTestId)
+          </li>
+          <li>
+            User interactions with fireEvent
+          </li>
+          <li>
+            Introduction to snapshot testing
+          </li>
+          <li>
+            Test organization and structure
+          </li>
+        </ul>
+      </div>
+      <div
+        class="progress-item completed"
+      >
+        <h4>
+          ✅ Lesson 2: RTL Deep Dive
+        </h4>
+        <ul>
+          <li>
+            Query priority (role 
+            &gt;
+             label 
+            &gt;
+             testid)
+          </li>
+          <li>
+            getBy vs queryBy vs findBy queries
+          </li>
+          <li>
+            Advanced userEvent interactions
+          </li>
+          <li>
+            Form testing and validation
+          </li>
+          <li>
+            Async testing with findBy and waitFor
+          </li>
+          <li>
+            Advanced snapshot testing techniques
+          </li>
+        </ul>
+      </div>
+      <div
+        class="progress-item upcoming"
+      >
+        <h4>
+          🔜 Lesson 3: Snapshot Testing Theory
+        </h4>
+        <ul>
+          <li>
+            When to use snapshot tests
+          </li>
+          <li>
+            Snapshot best practices
+          </li>
+          <li>
+            Managing snapshot files
+          </li>
+          <li>
+            Snapshot testing pitfalls
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+`;
+
 exports[`App Component - Lesson Structure matches lesson 1 app structure snapshot 1`] = `
 <div
   class="App"
@@ -89,4 +642,468 @@ exports[`App Component - Lesson Structure matches lesson 1 app structure snapsho
     </section>
   </main>
 </div>
+`;
+
+exports[`App Component - Lesson Structure matches lesson 1 section snapshot 1`] = `
+<section
+  class="lesson-section"
+  data-testid="lesson-1-section"
+>
+  <h2>
+    📚 Lesson 1: Testing Foundations
+  </h2>
+  <p>
+    Basic components, unit tests, and introduction to snapshot testing
+  </p>
+  <div
+    class="component-showcase"
+  >
+    <div
+      class="welcome-container"
+      data-testid="welcome-container"
+    >
+      <h1>
+        Welcome, 
+        React Testing Student
+        !
+      </h1>
+      <p>
+        Thank you for joining our React Snapshot Testing course.
+      </p>
+      <div
+        class="info"
+        data-testid="date-info"
+      >
+        <span>
+          Current date: 
+          5/23/2025
+        </span>
+      </div>
+    </div>
+    <div
+      class="button-group"
+    >
+      <button
+        class="btn btn-primary"
+        data-testid="basic-button"
+      >
+        Primary Action
+      </button>
+      <button
+        class="btn btn-secondary"
+        data-testid="basic-button"
+      >
+        Secondary Action
+      </button>
+      <button
+        class="btn btn-primary btn-disabled"
+        data-testid="basic-button"
+        disabled=""
+      >
+        Disabled Button
+      </button>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`App Component - Lesson Structure matches lesson 2 section snapshot 1`] = `
+<section
+  class="lesson-section"
+  data-testid="lesson-2-section"
+>
+  <h2>
+    🔍 Lesson 2: React Testing Library Mastery
+  </h2>
+  <p>
+    Query methods, user interactions, forms, and async testing
+  </p>
+  <div
+    class="component-showcase"
+  >
+    <div
+      class="user-cards"
+    >
+      <h3>
+        User Cards - Query Methods Practice
+      </h3>
+      <div
+        class="cards-grid"
+      >
+        <div
+          class="user-card"
+          data-testid="user-card"
+        >
+          <div
+            class="user-card__header"
+          >
+            <img
+              alt="Alice Johnson's profile picture"
+              class="user-card__avatar"
+              src="https://via.placeholder.com/60x60/4f46e5/ffffff?text=AJ"
+            />
+            <div
+              class="user-card__info"
+            >
+              <h2
+                class="user-card__name"
+              >
+                Alice Johnson
+              </h2>
+              <p
+                class="user-card__email"
+              >
+                alice@example.com
+              </p>
+              <div
+                class="user-card__status"
+              >
+                <span
+                  aria-label="User is online"
+                  class="status-indicator online"
+                />
+                <span
+                  class="status-text"
+                >
+                  Online
+                </span>
+              </div>
+              <span
+                aria-label="User role: admin"
+                class="user-card__role role-admin"
+                role="status"
+              >
+                Admin
+              </span>
+            </div>
+          </div>
+          <div
+            class="user-card__bio"
+          >
+            <h3>
+              About
+            </h3>
+            <p>
+              Senior developer and team lead with expertise in React and TypeScript.
+            </p>
+          </div>
+          <div
+            aria-label="User actions"
+            class="user-card__actions"
+            role="group"
+          >
+            <button
+              aria-label="Edit Alice Johnson's profile"
+              class="btn btn-primary"
+            >
+              Edit
+            </button>
+            <button
+              aria-label="Send message to Alice Johnson"
+              class="btn btn-secondary"
+            >
+              Message
+            </button>
+            <button
+              aria-label="Delete Alice Johnson's account"
+              class="btn btn-danger"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+        <div
+          class="user-card"
+          data-testid="user-card"
+        >
+          <div
+            class="user-card__header"
+          >
+            <div
+              class="user-card__avatar-placeholder"
+              title="No profile picture"
+            >
+              B
+            </div>
+            <div
+              class="user-card__info"
+            >
+              <h2
+                class="user-card__name"
+              >
+                Bob Smith
+              </h2>
+              <p
+                class="user-card__email"
+              >
+                bob@example.com
+              </p>
+              <div
+                class="user-card__status"
+              >
+                <span
+                  aria-label="User is offline"
+                  class="status-indicator offline"
+                />
+                <span
+                  class="status-text"
+                >
+                  Offline
+                </span>
+              </div>
+              <span
+                aria-label="User role: user"
+                class="user-card__role role-user"
+                role="status"
+              >
+                User
+              </span>
+            </div>
+          </div>
+          <div
+            class="user-card__bio"
+          >
+            <h3>
+              About
+            </h3>
+            <p>
+              Frontend developer passionate about creating amazing user experiences.
+            </p>
+          </div>
+          <div
+            aria-label="User actions"
+            class="user-card__actions"
+            role="group"
+          >
+            <button
+              aria-label="Edit Bob Smith's profile"
+              class="btn btn-primary"
+            >
+              Edit
+            </button>
+            <button
+              aria-label="Send message to Bob Smith"
+              class="btn btn-secondary"
+            >
+              Message
+            </button>
+          </div>
+        </div>
+        <div
+          class="user-card"
+          data-testid="user-card"
+        >
+          <div
+            class="user-card__header"
+          >
+            <div
+              class="user-card__avatar-placeholder"
+              title="No profile picture"
+            >
+              C
+            </div>
+            <div
+              class="user-card__info"
+            >
+              <h2
+                class="user-card__name"
+              >
+                Carol Davis
+              </h2>
+              <p
+                class="user-card__email"
+              >
+                carol@example.com
+              </p>
+              <div
+                class="user-card__status"
+              >
+                <span
+                  aria-label="User is online"
+                  class="status-indicator online"
+                />
+                <span
+                  class="status-text"
+                >
+                  Online
+                </span>
+              </div>
+              <span
+                aria-label="User role: guest"
+                class="user-card__role role-guest"
+                role="status"
+              >
+                Guest
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="contact-form-section"
+    >
+      <h3>
+        Contact Form - Form Testing & Validation
+      </h3>
+      <form
+        aria-label="Contact form"
+        class="contact-form"
+        data-testid="contact-form"
+      >
+        <h2>
+          Contact Us
+        </h2>
+        <div
+          class="form-group"
+        >
+          <label
+            for="name"
+          >
+            Name *
+          </label>
+          <input
+            class=""
+            id="name"
+            name="name"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          class="form-group"
+        >
+          <label
+            for="email"
+          >
+            Email *
+          </label>
+          <input
+            class=""
+            id="email"
+            name="email"
+            type="email"
+            value=""
+          />
+        </div>
+        <div
+          class="form-group"
+        >
+          <label
+            for="subject"
+          >
+            Subject *
+          </label>
+          <select
+            class=""
+            id="subject"
+            name="subject"
+          >
+            <option
+              value=""
+            >
+              Please select a subject
+            </option>
+            <option
+              value="general"
+            >
+              General Inquiry
+            </option>
+            <option
+              value="support"
+            >
+              Technical Support
+            </option>
+            <option
+              value="billing"
+            >
+              Billing Question
+            </option>
+            <option
+              value="feedback"
+            >
+              Feedback
+            </option>
+          </select>
+        </div>
+        <div
+          class="form-group"
+        >
+          <label
+            for="message"
+          >
+            Message *
+          </label>
+          <textarea
+            class=""
+            id="message"
+            name="message"
+            rows="5"
+          />
+        </div>
+        <div
+          class="form-group"
+        >
+          <label
+            class="checkbox-label"
+          >
+            <input
+              name="newsletter"
+              type="checkbox"
+            />
+            Subscribe to our newsletter
+          </label>
+        </div>
+        <div
+          class="form-actions"
+        >
+          <button
+            aria-describedby="submit-help"
+            class="btn btn-primary"
+            type="submit"
+          >
+            Send Message
+          </button>
+          <button
+            class="btn btn-secondary"
+            type="button"
+          >
+            Reset
+          </button>
+        </div>
+        <p
+          class="help-text"
+          id="submit-help"
+        >
+          * Required fields
+        </p>
+      </form>
+    </div>
+    <div
+      class="async-loader-section"
+    >
+      <h3>
+        Async Loader - Async Testing Patterns
+      </h3>
+      <div
+        class="async-loader"
+        data-testid="async-loader"
+      >
+        <div
+          aria-label="Loading users"
+          class="loading-spinner"
+          data-testid="loading-spinner"
+          role="status"
+        >
+          <div
+            class="spinner"
+          />
+          <p>
+            Loading users...
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 `;

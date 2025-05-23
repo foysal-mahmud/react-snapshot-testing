@@ -1,12 +1,12 @@
 import React from 'react';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import App from './App';
 
 describe('App Component - Lesson Structure', () => {
-  test('renders course title', () => {
+  test('renders main header', () => {
     render(<App />);
-    const title = screen.getByText('React Snapshot Testing Course');
-    expect(title).toBeInTheDocument();
+    const heading = screen.getByRole('heading', { name: /react snapshot testing - learning journey/i });
+    expect(heading).toBeInTheDocument();
   });
 
   test('renders lesson 1 section', () => {
@@ -14,57 +14,90 @@ describe('App Component - Lesson Structure', () => {
     const lesson1Section = screen.getByTestId('lesson-1-section');
     expect(lesson1Section).toBeInTheDocument();
     
-    const lesson1Title = screen.getByText('Lesson 1: Basic Testing Setup');
-    expect(lesson1Title).toBeInTheDocument();
+    const lesson1Heading = screen.getByRole('heading', { name: /lesson 1: testing foundations/i });
+    expect(lesson1Heading).toBeInTheDocument();
   });
 
-  test('renders welcome component with student name', () => {
+  test('renders lesson 2 section', () => {
     render(<App />);
-    const welcomeHeading = screen.getByText('Welcome, Student!');
-    expect(welcomeHeading).toBeInTheDocument();
+    const lesson2Section = screen.getByTestId('lesson-2-section');
+    expect(lesson2Section).toBeInTheDocument();
+    
+    const lesson2Heading = screen.getByRole('heading', { name: /lesson 2: react testing library mastery/i });
+    expect(lesson2Heading).toBeInTheDocument();
   });
 
-  test('renders all three lesson 1 buttons', () => {
+  test('renders progress section', () => {
     render(<App />);
+    const progressSection = screen.getByTestId('progress-section');
+    expect(progressSection).toBeInTheDocument();
     
-    const primaryButton = screen.getByText('Primary Button');
-    const secondaryButton = screen.getByText('Secondary Button');
-    const disabledButton = screen.getByText('Disabled Button');
-    
-    expect(primaryButton).toBeInTheDocument();
-    expect(secondaryButton).toBeInTheDocument();
-    expect(disabledButton).toBeInTheDocument();
-    expect(disabledButton).toBeDisabled();
+    const progressHeading = screen.getByRole('heading', { name: /learning progress/i });
+    expect(progressHeading).toBeInTheDocument();
   });
 
-  test('primary button shows alert when clicked', () => {
-    // Mock window.alert
-    window.alert = jest.fn();
-    
+  test('contains lesson 1 components', () => {
     render(<App />);
-    const primaryButton = screen.getByText('Primary Button');
-    fireEvent.click(primaryButton);
     
-    expect(window.alert).toHaveBeenCalledWith('Hello from Lesson 1!');
+    // Welcome component
+    const welcomeContainer = screen.getByTestId('welcome-container');
+    expect(welcomeContainer).toBeInTheDocument();
     
-    // Restore original alert
-    jest.restoreAllMocks();
+    // Basic buttons
+    const buttons = screen.getAllByTestId('basic-button');
+    expect(buttons).toHaveLength(3); // Primary, Secondary, Disabled
   });
 
-  test('renders course info section', () => {
+  test('contains lesson 2 components', () => {
     render(<App />);
-    const courseInfo = screen.getByTestId('course-info');
-    expect(courseInfo).toBeInTheDocument();
     
-    const learnLink = screen.getByText('Learn React Testing');
-    expect(learnLink).toBeInTheDocument();
-    expect(learnLink).toHaveAttribute('href', 'https://reactjs.org');
+    // User cards
+    const userCards = screen.getAllByTestId('user-card');
+    expect(userCards).toHaveLength(3); // Alice, Bob, Carol
+    
+    // Contact form
+    const contactForm = screen.getByTestId('contact-form');
+    expect(contactForm).toBeInTheDocument();
+    
+    // Async loader
+    const asyncLoader = screen.getByTestId('async-loader');
+    expect(asyncLoader).toBeInTheDocument();
   });
 
-  // Lesson 1 focused snapshot test
-  test('matches lesson 1 app structure snapshot', () => {
+  test('displays completed lesson progress', () => {
     render(<App />);
-    const appContainer = screen.getByTestId('app-container');
+    
+    // Check for completed lessons
+    expect(screen.getByText(/lesson 1: foundations/i)).toBeInTheDocument();
+    expect(screen.getByText(/lesson 2: rtl deep dive/i)).toBeInTheDocument();
+    
+    // Check for upcoming lesson
+    expect(screen.getByText(/lesson 3: snapshot testing theory/i)).toBeInTheDocument();
+  });
+
+  test('displays footer with goal', () => {
+    render(<App />);
+    
+    const footer = screen.getByText(/goal: master react snapshot testing/i);
+    expect(footer).toBeInTheDocument();
+  });
+
+  // Snapshot Tests
+  test('matches app structure snapshot', () => {
+    render(<App />);
+    const appContainer = screen.getByRole('main');
     expect(appContainer).toMatchSnapshot();
+  });
+
+  test('matches lesson 1 section snapshot', () => {
+    render(<App />);
+    const lesson1Section = screen.getByTestId('lesson-1-section');
+    expect(lesson1Section).toMatchSnapshot();
+  });
+
+  test('matches lesson 2 section snapshot', () => {
+    render(<App />);
+    const lesson2Section = screen.getByTestId('lesson-2-section');
+    expect(lesson2Section).toMatchSnapshot();
   });
 });

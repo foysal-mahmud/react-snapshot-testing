@@ -1,0 +1,338 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Lesson 2: AsyncLoader Component - Async Testing Mastery Lesson 2: Async State Snapshots captures error state snapshot 1`] = `
+<div
+  class="async-loader"
+  data-testid="async-loader"
+>
+  <div
+    class="error-state"
+    data-testid="error-state"
+    role="alert"
+  >
+    <h3>
+      Oops! Something went wrong
+    </h3>
+    <p>
+      Network error occurred
+    </p>
+    <button
+      class="btn btn-primary"
+      data-testid="retry-button"
+    >
+      Retry (
+      0
+      /3)
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Lesson 2: AsyncLoader Component - Async Testing Mastery Lesson 2: Async State Snapshots captures loading more state snapshot 1`] = `
+<div
+  class="async-loader"
+  data-testid="async-loader"
+>
+  <div
+    class="users-header"
+  >
+    <h2>
+      Users Directory
+    </h2>
+    <button
+      aria-label="Refresh users list"
+      class="btn btn-secondary"
+      data-testid="refresh-button"
+      disabled=""
+    >
+      Refreshing...
+    </button>
+  </div>
+  <div
+    aria-label="Users list"
+    class="users-list"
+    role="list"
+  >
+    <div
+      class="user-item"
+      data-testid="user-item-1"
+      role="listitem"
+    >
+      <div
+        class="user-info"
+      >
+        <h3
+          class="user-name"
+        >
+          Alice Johnson
+        </h3>
+        <p
+          class="user-email"
+        >
+          alice@example.com
+        </p>
+        <p
+          class="user-company"
+        >
+          TechCorp
+        </p>
+      </div>
+      <button
+        aria-label="View details for Alice Johnson"
+        class="btn btn-small"
+        data-testid="view-details-1"
+      >
+        View Details
+      </button>
+    </div>
+    <div
+      class="user-item"
+      data-testid="user-item-2"
+      role="listitem"
+    >
+      <div
+        class="user-info"
+      >
+        <h3
+          class="user-name"
+        >
+          Bob Smith
+        </h3>
+        <p
+          class="user-email"
+        >
+          bob@example.com
+        </p>
+        <p
+          class="user-company"
+        >
+          DevCo
+        </p>
+      </div>
+      <button
+        aria-label="View details for Bob Smith"
+        class="btn btn-small"
+        data-testid="view-details-2"
+      >
+        View Details
+      </button>
+    </div>
+    <div
+      class="user-item"
+      data-testid="user-item-3"
+      role="listitem"
+    >
+      <div
+        class="user-info"
+      >
+        <h3
+          class="user-name"
+        >
+          Carol Davis
+        </h3>
+        <p
+          class="user-email"
+        >
+          carol@example.com
+        </p>
+        <p
+          class="user-company"
+        >
+          CodeWorks
+        </p>
+      </div>
+      <button
+        aria-label="View details for Carol Davis"
+        class="btn btn-small"
+        data-testid="view-details-3"
+      >
+        View Details
+      </button>
+    </div>
+  </div>
+  <div
+    class="users-footer"
+  >
+    <p>
+      Showing 
+      3
+       users
+    </p>
+    <button
+      class="btn btn-primary"
+      data-testid="load-more-button"
+      disabled=""
+    >
+      Loading...
+    </button>
+  </div>
+  <div
+    aria-label="Loading more users"
+    class="loading-overlay"
+    data-testid="loading-overlay"
+    role="status"
+  >
+    Loading more users...
+  </div>
+</div>
+`;
+
+exports[`Lesson 2: AsyncLoader Component - Async Testing Mastery Lesson 2: Async State Snapshots captures loading state snapshot 1`] = `
+<div
+  class="async-loader"
+  data-testid="async-loader"
+>
+  <div
+    aria-label="Loading users"
+    class="loading-spinner"
+    data-testid="loading-spinner"
+    role="status"
+  >
+    <div
+      class="spinner"
+    />
+    <p>
+      Loading users...
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Lesson 2: AsyncLoader Component - Async Testing Mastery Lesson 2: Async State Snapshots captures success state snapshot 1`] = `
+<div
+  class="async-loader"
+  data-testid="async-loader"
+>
+  <div
+    class="users-header"
+  >
+    <h2>
+      Users Directory
+    </h2>
+    <button
+      aria-label="Refresh users list"
+      class="btn btn-secondary"
+      data-testid="refresh-button"
+    >
+      Refresh
+    </button>
+  </div>
+  <div
+    aria-label="Users list"
+    class="users-list"
+    role="list"
+  >
+    <div
+      class="user-item"
+      data-testid="user-item-1"
+      role="listitem"
+    >
+      <div
+        class="user-info"
+      >
+        <h3
+          class="user-name"
+        >
+          Alice Johnson
+        </h3>
+        <p
+          class="user-email"
+        >
+          alice@example.com
+        </p>
+        <p
+          class="user-company"
+        >
+          TechCorp
+        </p>
+      </div>
+      <button
+        aria-label="View details for Alice Johnson"
+        class="btn btn-small"
+        data-testid="view-details-1"
+      >
+        View Details
+      </button>
+    </div>
+    <div
+      class="user-item"
+      data-testid="user-item-2"
+      role="listitem"
+    >
+      <div
+        class="user-info"
+      >
+        <h3
+          class="user-name"
+        >
+          Bob Smith
+        </h3>
+        <p
+          class="user-email"
+        >
+          bob@example.com
+        </p>
+        <p
+          class="user-company"
+        >
+          DevCo
+        </p>
+      </div>
+      <button
+        aria-label="View details for Bob Smith"
+        class="btn btn-small"
+        data-testid="view-details-2"
+      >
+        View Details
+      </button>
+    </div>
+    <div
+      class="user-item"
+      data-testid="user-item-3"
+      role="listitem"
+    >
+      <div
+        class="user-info"
+      >
+        <h3
+          class="user-name"
+        >
+          Carol Davis
+        </h3>
+        <p
+          class="user-email"
+        >
+          carol@example.com
+        </p>
+        <p
+          class="user-company"
+        >
+          CodeWorks
+        </p>
+      </div>
+      <button
+        aria-label="View details for Carol Davis"
+        class="btn btn-small"
+        data-testid="view-details-3"
+      >
+        View Details
+      </button>
+    </div>
+  </div>
+  <div
+    class="users-footer"
+  >
+    <p>
+      Showing 
+      3
+       users
+    </p>
+    <button
+      class="btn btn-primary"
+      data-testid="load-more-button"
+    >
+      Load More
+    </button>
+  </div>
+</div>
+`;
