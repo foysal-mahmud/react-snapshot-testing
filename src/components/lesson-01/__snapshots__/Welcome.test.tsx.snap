@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Lesson 1: Welcome Component Lesson 1: Introduction to Snapshot Testing matches snapshot for lesson 1 student 1`] = `
+<div
+  class="welcome-container"
+  data-testid="welcome-container"
+>
+  <h1>
+    Welcome, 
+    Student
+    !
+  </h1>
+  <p>
+    Thank you for joining our React Snapshot Testing course.
+  </p>
+  <div
+    class="info"
+    data-testid="date-info"
+  >
+    <span>
+      Current date: 
+      5/23/2025
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Lesson 1: Welcome Component Lesson 1: Introduction to Snapshot Testing matches snapshot with custom props 1`] = `
+<div
+  class="welcome-container"
+  data-testid="welcome-container"
+>
+  <p>
+    Thank you for joining our React Snapshot Testing course.
+  </p>
+  <div
+    class="info"
+    data-testid="date-info"
+  >
+    <span>
+      Current date: 
+      5/23/2025
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Lesson 1: Welcome Component Lesson 1: Introduction to Snapshot Testing matches snapshot with default props 1`] = `
+<div
+  class="welcome-container"
+  data-testid="welcome-container"
+>
+  <h1>
+    Welcome, 
+    Guest
+    !
+  </h1>
+  <p>
+    Thank you for joining our React Snapshot Testing course.
+  </p>
+  <div
+    class="info"
+    data-testid="date-info"
+  >
+    <span>
+      Current date: 
+      5/23/2025
+    </span>
+  </div>
+</div>
+`;

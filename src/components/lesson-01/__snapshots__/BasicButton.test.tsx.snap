@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Lesson 1: BasicButton Component Snapshot Tests - Structure Testing matches snapshot when disabled 1`] = `
+<button
+  class="btn btn-primary btn-disabled"
+  data-testid="basic-button"
+  disabled=""
+>
+  Disabled Button
+</button>
+`;
+
+exports[`Lesson 1: BasicButton Component Snapshot Tests - Structure Testing matches snapshot with all props 1`] = `
+<button
+  class="btn btn-secondary btn-disabled"
+  data-testid="basic-button"
+  disabled=""
+>
+  Complex Button
+</button>
+`;
+
+exports[`Lesson 1: BasicButton Component Snapshot Tests - Structure Testing matches snapshot with default props 1`] = `
+<button
+  class="btn btn-primary"
+  data-testid="basic-button"
+>
+  Default Button
+</button>
+`;
+
+exports[`Lesson 1: BasicButton Component Snapshot Tests - Structure Testing matches snapshot with primary variant 1`] = `
+<button
+  class="btn btn-primary"
+  data-testid="basic-button"
+>
+  Primary Button
+</button>
+`;
+
+exports[`Lesson 1: BasicButton Component Snapshot Tests - Structure Testing matches snapshot with secondary variant 1`] = `
+<button
+  class="btn btn-secondary"
+  data-testid="basic-button"
+>
+  Secondary Button
+</button>
+`;
