@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './styles/main.scss';
 
 // Lesson 1 Components
 import Welcome from './components/lesson-01/Welcome';
